@@ -8,6 +8,14 @@ describe('Test default route', () => {
     });
 });
 
+describe('Test helloworld route', () => {
+    it('Request /helloworld return 200', async () => {
+        const result = await request(app).get('/helloworld').send();
+        expect(result.status).toBe(200);
+        expect(result.body.Hello).toEqual('World');
+    });
+});
+
 describe('Test not found route', () => {
     it('Request /notfound should return 404', async () => {
         const result = await request(app).get('/notfound').send();
