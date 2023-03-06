@@ -1,1 +1,0 @@
-# Boilerplate - Node.js Express Typescript
