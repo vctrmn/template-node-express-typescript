@@ -14,6 +14,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install --omit=dev
 COPY --from=builder /usr/src/app/dist ./
+EXPOSE 5001
 # Run the container with a non-root User
 USER node
 CMD ["node", "index.js"]
