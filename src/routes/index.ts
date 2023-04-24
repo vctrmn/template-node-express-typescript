@@ -5,10 +5,6 @@ export default (app: Application): void => {
         res.status(204).send();
     });
 
-    app.get('/hello', (req: Request, res: Response) => {
-        res.status(200).send({ Hello: 'World' });
-    });
-
     app.get('*', (req: Request, res: Response) => {
         res.status(404).send({ error: 'Not Found' });
     });

@@ -9,7 +9,7 @@
         "strict": true,
         "noImplicitAny": true,
         /* Module Resolution Options */
-        "moduleResolution": "node",
+        "moduleResolution": "nodenext",
         "esModuleInterop": true,
         /* Advanced Options */
         "skipLibCheck": true,
